@@ -1,0 +1,61 @@
+// *,
+// *::before,
+// *::after {
+//   outline: 1px solid red;
+// }
+
+.nav {
+  position: fixed;
+  min-width: 296px;
+  min-height: 100vh;
+  padding: 32px 0px;
+  &-logo {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/2b326fe971cd296bd54667a9b4a63c4b0f19fab3/week5/logo-ANSWER.svg);
+    width: 151px;
+    height: 40px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+  }
+  &-item {
+    margin-bottom: 20px;
+  }
+  &-link {
+    color: $gray-900;
+    padding-left: 32px;
+    position: relative;
+    &:hover {
+      color: $gray-900;
+      background-color: $gray-400;
+    }
+    &:visited {
+      color: $gray-900;
+    }
+    &.active {
+      color: $success;
+      & ::before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 4px;
+        height: 40px;
+        border-left: 4px solid $success;
+      }
+      &:hover {
+        background-color: $light;
+      }
+    }
+  }
+}
+
+.account {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  &-name {
+    line-height: 22px;
+  }
+  &-email {
+    line-height: 19px;
+  }
+}

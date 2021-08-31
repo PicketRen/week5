@@ -1,1 +1,9 @@
-@import './layout/_index.scss';
+@import "variable";
+@import "reset";
+@import "base";
+@import "utility";
+@import "helper";
+
+@import './layout/layout';
+
+@import "./pages/index";

@@ -1,0 +1,47 @@
+// img replace text
+.text-replaced {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+//headshot-round
+.headshot-round {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.subtitle {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: bold;
+  margin-right: $spacer * 3;
+}
+
+//remove button shadow
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+//text html tag deco
+.html-tag {
+  font-family: $font-roboto-mono;
+  font-size: 14px;
+  color: $success;
+  background-color: $light;
+  border-radius: 2px;
+}
+
+.btn-download {
+  padding: 8px 16px 8px 12px;
+  margin-top: 16px;
+  background-color: $light;
+  font-weight: bold;
+  border: 1px solid $gray-400;
+  border-radius: 2px;
+  &:hover {
+    outline: 3px solid $gray-600;
+  }
+}

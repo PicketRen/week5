@@ -1,0 +1,25 @@
+//全域設定
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-lato, $font-roboto-mono, $font-family-all;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $primary;
+}
+main {
+  margin-left: 296px;
+  min-width: 984px;
+  padding-left: 33px;
+}
+img {
+  display: block;
+}
+a {
+  display: block;
+  text-decoration: none;
+}

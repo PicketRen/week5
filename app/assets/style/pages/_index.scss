@@ -1,0 +1,79 @@
+.navbar {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 32px;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.list-group {
+  &-title {
+    margin-top: 12px;
+    margin-bottom: 6px;
+  }
+  &-item {
+    min-width: 320px;
+    padding: 12px;
+    border: 1px solid $gray-400;
+    &.active {
+      color: $primary;
+      background-color: $light;
+      border-color: $gray-400;
+    }
+    &:hover {
+      color: $primary;
+      background-color: $light;
+    }
+  }
+}
+.list-group-item:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.list-group-item:last-child {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.card {
+  min-width: 580px;
+  &-no {
+    margin-top: 14px;
+    margin-bottom: 8px;
+  }
+  &-main {
+    width: 488px;
+    border-bottom: 1px solid $gray-400;
+  }
+  &-header {
+    padding: 12px 16px;
+  }
+  &-body1 {
+    padding: 16px 32px 0px 16px;
+  }
+  &-body2 {
+    padding: 16px 32px 22px 16px;
+  }
+}
+
+.page-space {
+  margin-bottom: 32px;
+  margin-right: 32px;
+}
+
+.page-link {
+  color: $primary;
+  border: 0;
+  &:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
